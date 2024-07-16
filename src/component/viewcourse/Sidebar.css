@@ -61,6 +61,7 @@
   /* Add your styles here */
   text-align: left;
   margin-top: 40px;
+  width: 92%;
 }
 
 .markdown-container h1,
@@ -77,15 +78,41 @@
 }
 
 .markdown-container pre {
-  background-color: #3a3a3a;
-  padding: 15px;
-  border-radius: 4px;
+  color: rgb(249, 250, 251);
+  background: rgb(29, 41, 57);
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 1px;
+  font-family: "Roboto Mono", Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
+    monospace;
+  font-size: 14px;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+  padding: 1em;
+  margin: 0.5em 0px;
   overflow: auto;
-  color: whitesmoke;
+  border-radius: 8px;
 }
 
 .markdown-container code {
-  font-family: "Fredoka", sans-serif;
+  color: rgb(249, 250, 251);
+  background: none;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 1px;
+  font-family: "Roboto Mono", Consolas, Monaco, "Andale Mono", "Ubuntu Mono",
+    monospace;
+  font-size: 14px;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
 }
 
 .markdown-container .keyword {
