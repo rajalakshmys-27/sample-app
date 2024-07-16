@@ -1,13 +1,14 @@
 import { Typography } from "@mui/material";
-
+import { AppProvider } from "./component/viewcourse/AppContext";
 import Courses from "./component/Courses";
-
 
 function App() {
   return (
-    <>
-      <Courses />
-    </>
+    <AppProvider>
+      <Typography>
+        <Courses />
+      </Typography>
+    </AppProvider>
   );
 }
 
