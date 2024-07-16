@@ -1,15 +1,23 @@
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import "../viewcourse/Sidebar.css"; // Your existing styles
 
-import React from "react";
-import { Link } from "react-router-dom";
-
 const Sidebar = ({ pages }) => {
+  const location = useLocation();
   return (
     <div className="sidebar">
       <div className="sidebar-scroll-container">
         <ul className="sidebar-list">
           {pages.map((page) => (
-            <li key={page.id} className="sidebar-item">
+            <li
+              key={page.id}
+              className={`sidebar-item ${
+                location.pathname === page.path ||
+                (location.pathname === "/" && page.id === 1)
+                  ? "active"
+                  : ""
+              }`}
+            >
               <Link
                 to={page.path}
                 className="sidebar-link"

@@ -1,40 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
 
 .app-container {
-    display: flex;
+  display: flex;
 }
-.header{
-    width: 100%;
-    height: 50px;
-    position: relative;
+.header {
+  width: 100%;
+  height: 50px;
+  position: relative;
 }
 
 .sidebar {
-    min-width: 250px;
-    max-height: 100vh;
-    background-color: #FFFFFF;
+  min-width: 250px;
+  max-height: 100vh;
+  background-color: #ffffff;
 }
 
-
 .sidebar-list {
-    list-style: none;
-    padding: 16px;
+  list-style: none;
+  padding: 16px;
 }
 
 .sidebar-item {
-    margin-bottom: 10px;
-    padding: 8px 16px;
-    color: #12B76A;
+  margin-bottom: 10px;
+  padding: 8px 16px;
+  color: #12b76a;
 }
 
 .sidebar-link {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
+}
+
+.sidebar-item.active .sidebar-link {
+  color: #12b76a;
 }
 
 .page-title {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 /* Apply styles to code blocks */
@@ -55,49 +58,49 @@
 
 /* markdownStyles.css */
 .markdown-container {
-    /* Add your styles here */
-    text-align: left;
-    margin-top: 40px;
+  /* Add your styles here */
+  text-align: left;
+  margin-top: 40px;
 }
 
 .markdown-container h1,
 .markdown-container h2,
 .markdown-container h3 {
-    /* Styles for headings */
-    color: #000000;
-    font-weight: 500;
+  /* Styles for headings */
+  color: #000000;
+  font-weight: 500;
 }
 
 .markdown-container p {
-    /* Styles for paragraphs */
-    color: #000000;
+  /* Styles for paragraphs */
+  color: #000000;
 }
 
 .markdown-container pre {
-    background-color: #3a3a3a;
-    padding: 15px;
-    border-radius: 4px;
-    overflow: auto;
-    color: whitesmoke;
+  background-color: #3a3a3a;
+  padding: 15px;
+  border-radius: 4px;
+  overflow: auto;
+  color: whitesmoke;
 }
 
 .markdown-container code {
-    font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
 }
 
 .markdown-container .keyword {
-    color: blue;
-    /* Customize the color for keywords */
+  color: blue;
+  /* Customize the color for keywords */
 }
 
 .markdown-container .string {
-    color:#12B76A;
-    /* Customize the color for strings */
+  color: #12b76a;
+  /* Customize the color for strings */
 }
 
 .markdown-container .comment {
-    color: gray;
-    /* Customize the color for comments */
+  color: gray;
+  /* Customize the color for comments */
 }
 
 /* Add more specific styles for other Markdown elements as needed */
@@ -106,30 +109,27 @@
 
 /* Style for the container with the scrollbar */
 .sidebar-scroll-container {
-    max-height: 100%; /* Adjust the maximum height as needed */
-    overflow-y: auto; /* Enable vertical scrolling */
-    scrollbar-width: thin; /* Thin scrollbar (supported in Firefox) */
-    scrollbar-color: #767676 transparent; /* Scrollbar color */
+  max-height: 100%; /* Adjust the maximum height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  scrollbar-width: thin; /* Thin scrollbar (supported in Firefox) */
+  scrollbar-color: #767676 transparent; /* Scrollbar color */
+}
 
-   
-  }
-  
-  .sidebar-scroll-container::-webkit-scrollbar {
-    width: 6px; /* Width of the scrollbar */
-    height: 6px;
-    background-color: transparent; /* Make the scrollbar track transparent */
-  }
-  
-  .sidebar-scroll-container::-webkit-scrollbar-thumb {
-    background-color: #12B76A; /* Thumb color */
-    border-radius: 3px; /* Rounded corners for the thumb */
-  }
-  
-  .sidebar-scroll-container::-webkit-scrollbar-button {
-    display: none; /* Hide scrollbar buttons */
-  }
-  
-  .sidebar-scroll-container:hover::-webkit-scrollbar-thumb {
-    background-color: #0E8854; /* Darker thumb color on hover */
-  }
-  
+.sidebar-scroll-container::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+  height: 6px;
+  background-color: transparent; /* Make the scrollbar track transparent */
+}
+
+.sidebar-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #12b76a; /* Thumb color */
+  border-radius: 3px; /* Rounded corners for the thumb */
+}
+
+.sidebar-scroll-container::-webkit-scrollbar-button {
+  display: none; /* Hide scrollbar buttons */
+}
+
+.sidebar-scroll-container:hover::-webkit-scrollbar-thumb {
+  background-color: #0e8854; /* Darker thumb color on hover */
+}
