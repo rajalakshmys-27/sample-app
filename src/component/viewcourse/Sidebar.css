@@ -165,3 +165,30 @@
 .sidebar-scroll-container:hover::-webkit-scrollbar-thumb {
   background-color: #0e8854; /* Darker thumb color on hover */
 }
+
+.sidebar-backdrop {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar.default {
+    display: none;
+  }
+  .sidebar.active {
+    display: unset;
+    position: absolute;
+    min-width: 215px;
+  }
+  .sidebar-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  .show{
+    display: block;
+  }
+}

@@ -15,10 +15,12 @@ import AppContext from "./AppContext";
 
 const Header = () => {
   const [menuAnchorEl, setMenuAnchorEl] = useState(null);
-  const { setSelectedDocType } = useContext(AppContext);
+  const { setSelectedDocType, isMenuClicked, setIsMenuClicked } =
+    useContext(AppContext);
 
   const handleMenuClick = (event) => {
     setMenuAnchorEl(event.currentTarget);
+    setIsMenuClicked(!isMenuClicked);
   };
 
   const handleClose = () => {
