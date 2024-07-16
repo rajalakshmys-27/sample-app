@@ -113,6 +113,7 @@
   overflow-y: auto; /* Enable vertical scrolling */
   scrollbar-width: thin; /* Thin scrollbar (supported in Firefox) */
   scrollbar-color: #767676 transparent; /* Scrollbar color */
+  overflow-y: hidden; /* Hide the scrollbar by default */
 }
 
 .sidebar-scroll-container::-webkit-scrollbar {
@@ -128,6 +129,10 @@
 
 .sidebar-scroll-container::-webkit-scrollbar-button {
   display: none; /* Hide scrollbar buttons */
+}
+
+.sidebar-scroll-container:hover {
+  overflow-y: auto; /* Show the scrollbar on hover */
 }
 
 .sidebar-scroll-container:hover::-webkit-scrollbar-thumb {
