@@ -47,9 +47,12 @@ const Header = () => {
   };
 
   return (
-    <AppBar sx={{ backgroundColor: "#FFFFFF" }}>
-      <Container>
-        <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+    <AppBar sx={{ backgroundColor: "#FFFFFF" }} position="static">
+      <Container maxWidth="lg">
+        <Toolbar
+          sx={{ display: "flex", justifyContent: "space-between" }}
+          style={{ height: "100%" }}
+        >
           <img src={logo} alt="logo" />
           {isSmallScreen ? (
             <IconButton

@@ -7,6 +7,7 @@
   width: 100%;
   height: 50px;
   position: relative;
+  z-index: 2;
 }
 
 .sidebar {
@@ -170,7 +171,7 @@
   display: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   .sidebar.default {
     display: none;
   }
